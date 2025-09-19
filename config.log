@@ -46,14 +46,2404 @@ PATH: /snap/bin/
 
 configure:2366: looking for aux files: config.guess config.sub
 configure:2379:  trying ./
-configure:2379:  trying ./../
-configure:2379:  trying ./../../
-configure:2432: error: cannot find required auxiliary files: config.guess config.sub
+configure:2408:   ./config.guess found
+configure:2408:   ./config.sub found
+configure:2526: checking build system type
+configure:2541: result: x86_64-pc-linux-gnu
+configure:2561: checking host system type
+configure:2575: result: x86_64-pc-linux-gnu
+configure:2670: checking for gcc
+configure:2691: found /usr/bin/gcc
+configure:2702: result: gcc
+configure:3055: checking for C compiler version
+configure:3064: gcc --version >&5
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+configure:3075: $? = 0
+configure:3064: gcc -v >&5
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+... rest of stderr output deleted ...
+configure:3075: $? = 0
+configure:3064: gcc -V >&5
+gcc: error: unrecognized command-line option '-V'
+gcc: fatal error: no input files
+compilation terminated.
+configure:3075: $? = 1
+configure:3064: gcc -qversion >&5
+gcc: error: unrecognized command-line option '-qversion'; did you mean '--version'?
+gcc: fatal error: no input files
+compilation terminated.
+configure:3075: $? = 1
+configure:3064: gcc -version >&5
+gcc: error: unrecognized command-line option '-version'
+gcc: fatal error: no input files
+compilation terminated.
+configure:3075: $? = 1
+configure:3095: checking whether the C compiler works
+configure:3117: gcc    conftest.c  >&5
+configure:3121: $? = 0
+configure:3171: result: yes
+configure:3174: checking for C compiler default output file name
+configure:3176: result: a.out
+configure:3182: checking for suffix of executables
+configure:3189: gcc -o conftest    conftest.c  >&5
+configure:3193: $? = 0
+configure:3216: result: 
+configure:3238: checking whether we are cross compiling
+configure:3246: gcc -o conftest    conftest.c  >&5
+configure:3250: $? = 0
+configure:3257: ./conftest
+configure:3261: $? = 0
+configure:3276: result: no
+configure:3281: checking for suffix of object files
+configure:3304: gcc -c   conftest.c >&5
+configure:3308: $? = 0
+configure:3330: result: o
+configure:3334: checking whether the compiler supports GNU C
+configure:3354: gcc -c   conftest.c >&5
+configure:3354: $? = 0
+configure:3364: result: yes
+configure:3375: checking whether gcc accepts -g
+configure:3396: gcc -c -g  conftest.c >&5
+configure:3396: $? = 0
+configure:3440: result: yes
+configure:3460: checking for gcc option to enable C11 features
+configure:3475: gcc  -c -g -O2  conftest.c >&5
+configure:3475: $? = 0
+configure:3493: result: none needed
+configure:3651: checking for ranlib
+configure:3672: found /usr/bin/ranlib
+configure:3683: result: ranlib
+configure:3707: checking for pthread_create in -lpthread
+configure:3730: gcc -o conftest -g -O2   conftest.c -lpthread   >&5
+configure:3730: $? = 0
+configure:3740: result: yes
+configure:3801: checking for t_open in -lnsl
+configure:3824: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lnsl  -lpthread  >&5
+/usr/bin/ld: cannot find -lnsl: No such file or directory
+collect2: error: ld returned 1 exit status
+configure:3824: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| /* end confdefs.h.  */
+| 
+| /* Override any GCC internal prototype to avoid an error.
+|    Use char because int might match the return type of a GCC
+|    builtin and then its argument prototype would still apply.  */
+| char t_open ();
+| int
+| main (void)
+| {
+| return t_open ();
+|   ;
+|   return 0;
+| }
+configure:3834: result: no
+configure:3844: checking for library containing socket
+configure:3874: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+configure:3874: $? = 0
+configure:3894: result: none required
+configure:3904: checking for /usr/local/bind/lib/libbind.a
+configure:3911: result: no
+configure:3913: checking for /home/fei/libbind.a
+configure:3920: result: no
+configure:3922: checking for /home/fei/libresolv.a
+configure:3929: result: no
+configure:3931: checking for res_init in -lresolv
+configure:3954: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lresolv  -lpthread  >&5
+/usr/bin/ld: /tmp/ccReOtrJ.o: in function `main':
+/home/fei/practice/conftest.c:19:(.text.startup+0xb): undefined reference to `res_init'
+collect2: error: ld returned 1 exit status
+configure:3954: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| /* end confdefs.h.  */
+| 
+| /* Override any GCC internal prototype to avoid an error.
+|    Use char because int might match the return type of a GCC
+|    builtin and then its argument prototype would still apply.  */
+| char res_init ();
+| int
+| main (void)
+| {
+| return res_init ();
+|   ;
+|   return 0;
+| }
+configure:3964: result: no
+configure:3978: checking for t_open in -lxti
+configure:4001: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lxti  -lpthread  >&5
+/usr/bin/ld: cannot find -lxti: No such file or directory
+collect2: error: ld returned 1 exit status
+configure:4001: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| /* end confdefs.h.  */
+| 
+| /* Override any GCC internal prototype to avoid an error.
+|    Use char because int might match the return type of a GCC
+|    builtin and then its argument prototype would still apply.  */
+| char t_open ();
+| int
+| main (void)
+| {
+| return t_open ();
+|   ;
+|   return 0;
+| }
+configure:4011: result: no
+configure:4022: checking for /home/fei/libunp.a
+configure:4030: result: no
+configure:4036: checking for /home/fei/libunpxti.a
+configure:4044: result: no
+configure:4060: checking for stdio.h
+configure:4060: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+configure:4060: $? = 0
+configure:4060: result: yes
+configure:4060: checking for stdlib.h
+configure:4060: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+configure:4060: $? = 0
+configure:4060: result: yes
+configure:4060: checking for string.h
+configure:4060: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+configure:4060: $? = 0
+configure:4060: result: yes
+configure:4060: checking for inttypes.h
+configure:4060: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+configure:4060: $? = 0
+configure:4060: result: yes
+configure:4060: checking for stdint.h
+configure:4060: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+configure:4060: $? = 0
+configure:4060: result: yes
+configure:4060: checking for strings.h
+configure:4060: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+configure:4060: $? = 0
+configure:4060: result: yes
+configure:4060: checking for sys/stat.h
+configure:4060: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+configure:4060: $? = 0
+configure:4060: result: yes
+configure:4060: checking for sys/types.h
+configure:4060: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+configure:4060: $? = 0
+configure:4060: result: yes
+configure:4060: checking for unistd.h
+configure:4060: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+configure:4060: $? = 0
+configure:4060: result: yes
+configure:4085: checking for grep that handles long lines and -e
+configure:4149: result: /usr/bin/grep
+configure:4154: checking for egrep
+configure:4222: result: /usr/bin/grep -E
+configure:4281: checking if uint8_t defined
+configure:4366: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+conftest.c: In function 'main':
+conftest.c:93:17: error: unknown type name 'uint8_t'
+   93 |                 uint8_t foo;
+      |                 ^~~~~~~
+conftest.c:67:1: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+   66 | #  include      <unistd.h>
+   67 | #endif
+configure:4366: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| /* end confdefs.h.  */
+| 
+| #include	"confdefs.h"	/* the header built by configure so far */
+| #ifdef	HAVE_SYS_TYPES_H
+| #  include	<sys/types.h>
+| #endif
+| #ifdef	HAVE_SYS_SOCKET_H
+| #  include	<sys/socket.h>
+| #endif
+| #ifdef	HAVE_SYS_TIME_H
+| #  include    <sys/time.h>
+| #endif
+| #ifdef	HAVE_NETINET_IN_H
+| #  include    <netinet/in.h>
+| #endif
+| #ifdef	HAVE_ARPA_INET_H
+| #  include    <arpa/inet.h>
+| #endif
+| #ifdef	HAVE_ERRNO_H
+| #  include    <errno.h>
+| #endif
+| #ifdef	HAVE_FCNTL_H
+| #  include    <fcntl.h>
+| #endif
+| #ifdef	HAVE_NETDB_H
+| #  include	<netdb.h>
+| #endif
+| #ifdef	HAVE_SIGNAL_H
+| #  include	<signal.h>
+| #endif
+| #ifdef	HAVE_STDIO_H
+| #  include	<stdio.h>
+| #endif
+| #ifdef	HAVE_STDLIB_H
+| #  include	<stdlib.h>
+| #endif
+| #ifdef	HAVE_STRING_H
+| #  include	<string.h>
+| #endif
+| #ifdef	HAVE_SYS_STAT_H
+| #  include	<sys/stat.h>
+| #endif
+| #ifdef	HAVE_SYS_UIO_H
+| #  include	<sys/uio.h>
+| #endif
+| #ifdef	HAVE_UNISTD_H
+| #  include	<unistd.h>
+| #endif
+| #ifdef	HAVE_SYS_WAIT_H
+| #  include	<sys/wait.h>
+| #endif
+| #ifdef	HAVE_SYS_UN_H
+| #  include	<sys/un.h>
+| #endif
+| #ifdef	HAVE_SYS_SELECT_H
+| # include   <sys/select.h>
+| #endif
+| #ifdef	HAVE_STRINGS_H
+| # include   <strings.h>
+| #endif
+| #ifdef	HAVE_SYS_IOCTL_H
+| # include   <sys/ioctl.h>
+| #endif
+| #ifdef	HAVE_SYS_FILIO_H
+| # include   <sys/filio.h>
+| #endif
+| #ifdef	HAVE_SYS_SOCKIO_H
+| # include   <sys/sockio.h>
+| #endif
+| #ifdef	HAVE_PTHREAD_H
+| #  include	<pthread.h>
+| #endif
+|             int main(void) {
+|                 uint8_t foo;
+|                 return 0;
+|             }
+| 
+configure:4375: result: no
+configure:4383: checking if int16_t defined
+configure:4468: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+configure:4468: $? = 0
+configure:4477: result: yes
+configure:4485: checking if uint16_t defined
+configure:4570: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+conftest.c: In function 'main':
+conftest.c:94:17: error: unknown type name 'uint16_t'
+   94 |                 uint16_t foo;
+      |                 ^~~~~~~~
+conftest.c:68:1: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+   67 | #  include      <unistd.h>
+   68 | #endif
+configure:4570: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| /* end confdefs.h.  */
+| 
+| #include	"confdefs.h"	/* the header built by configure so far */
+| #ifdef	HAVE_SYS_TYPES_H
+| #  include	<sys/types.h>
+| #endif
+| #ifdef	HAVE_SYS_SOCKET_H
+| #  include	<sys/socket.h>
+| #endif
+| #ifdef	HAVE_SYS_TIME_H
+| #  include    <sys/time.h>
+| #endif
+| #ifdef	HAVE_NETINET_IN_H
+| #  include    <netinet/in.h>
+| #endif
+| #ifdef	HAVE_ARPA_INET_H
+| #  include    <arpa/inet.h>
+| #endif
+| #ifdef	HAVE_ERRNO_H
+| #  include    <errno.h>
+| #endif
+| #ifdef	HAVE_FCNTL_H
+| #  include    <fcntl.h>
+| #endif
+| #ifdef	HAVE_NETDB_H
+| #  include	<netdb.h>
+| #endif
+| #ifdef	HAVE_SIGNAL_H
+| #  include	<signal.h>
+| #endif
+| #ifdef	HAVE_STDIO_H
+| #  include	<stdio.h>
+| #endif
+| #ifdef	HAVE_STDLIB_H
+| #  include	<stdlib.h>
+| #endif
+| #ifdef	HAVE_STRING_H
+| #  include	<string.h>
+| #endif
+| #ifdef	HAVE_SYS_STAT_H
+| #  include	<sys/stat.h>
+| #endif
+| #ifdef	HAVE_SYS_UIO_H
+| #  include	<sys/uio.h>
+| #endif
+| #ifdef	HAVE_UNISTD_H
+| #  include	<unistd.h>
+| #endif
+| #ifdef	HAVE_SYS_WAIT_H
+| #  include	<sys/wait.h>
+| #endif
+| #ifdef	HAVE_SYS_UN_H
+| #  include	<sys/un.h>
+| #endif
+| #ifdef	HAVE_SYS_SELECT_H
+| # include   <sys/select.h>
+| #endif
+| #ifdef	HAVE_STRINGS_H
+| # include   <strings.h>
+| #endif
+| #ifdef	HAVE_SYS_IOCTL_H
+| # include   <sys/ioctl.h>
+| #endif
+| #ifdef	HAVE_SYS_FILIO_H
+| # include   <sys/filio.h>
+| #endif
+| #ifdef	HAVE_SYS_SOCKIO_H
+| # include   <sys/sockio.h>
+| #endif
+| #ifdef	HAVE_PTHREAD_H
+| #  include	<pthread.h>
+| #endif
+|             int main(void) {
+|                 uint16_t foo;
+|                 return 0;
+|             }
+| 
+configure:4579: result: no
+configure:4587: checking if int32_t defined
+configure:4672: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+configure:4672: $? = 0
+configure:4681: result: yes
+configure:4689: checking if uint32_t defined
+configure:4774: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+conftest.c: In function 'main':
+conftest.c:95:17: error: unknown type name 'uint32_t'
+   95 |                 uint32_t foo;
+      |                 ^~~~~~~~
+conftest.c:69:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+   68 | #  include      <unistd.h>
+   69 | #endif
+configure:4774: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| /* end confdefs.h.  */
+| 
+| #include	"confdefs.h"	/* the header built by configure so far */
+| #ifdef	HAVE_SYS_TYPES_H
+| #  include	<sys/types.h>
+| #endif
+| #ifdef	HAVE_SYS_SOCKET_H
+| #  include	<sys/socket.h>
+| #endif
+| #ifdef	HAVE_SYS_TIME_H
+| #  include    <sys/time.h>
+| #endif
+| #ifdef	HAVE_NETINET_IN_H
+| #  include    <netinet/in.h>
+| #endif
+| #ifdef	HAVE_ARPA_INET_H
+| #  include    <arpa/inet.h>
+| #endif
+| #ifdef	HAVE_ERRNO_H
+| #  include    <errno.h>
+| #endif
+| #ifdef	HAVE_FCNTL_H
+| #  include    <fcntl.h>
+| #endif
+| #ifdef	HAVE_NETDB_H
+| #  include	<netdb.h>
+| #endif
+| #ifdef	HAVE_SIGNAL_H
+| #  include	<signal.h>
+| #endif
+| #ifdef	HAVE_STDIO_H
+| #  include	<stdio.h>
+| #endif
+| #ifdef	HAVE_STDLIB_H
+| #  include	<stdlib.h>
+| #endif
+| #ifdef	HAVE_STRING_H
+| #  include	<string.h>
+| #endif
+| #ifdef	HAVE_SYS_STAT_H
+| #  include	<sys/stat.h>
+| #endif
+| #ifdef	HAVE_SYS_UIO_H
+| #  include	<sys/uio.h>
+| #endif
+| #ifdef	HAVE_UNISTD_H
+| #  include	<unistd.h>
+| #endif
+| #ifdef	HAVE_SYS_WAIT_H
+| #  include	<sys/wait.h>
+| #endif
+| #ifdef	HAVE_SYS_UN_H
+| #  include	<sys/un.h>
+| #endif
+| #ifdef	HAVE_SYS_SELECT_H
+| # include   <sys/select.h>
+| #endif
+| #ifdef	HAVE_STRINGS_H
+| # include   <strings.h>
+| #endif
+| #ifdef	HAVE_SYS_IOCTL_H
+| # include   <sys/ioctl.h>
+| #endif
+| #ifdef	HAVE_SYS_FILIO_H
+| # include   <sys/filio.h>
+| #endif
+| #ifdef	HAVE_SYS_SOCKIO_H
+| # include   <sys/sockio.h>
+| #endif
+| #ifdef	HAVE_PTHREAD_H
+| #  include	<pthread.h>
+| #endif
+|             int main(void) {
+|                 uint32_t foo;
+|                 return 0;
+|             }
+| 
+configure:4783: result: no
+configure:4791: checking if size_t defined
+configure:4876: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+configure:4876: $? = 0
+configure:4885: result: yes
+configure:4893: checking if ssize_t defined
+configure:4978: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+configure:4978: $? = 0
+configure:4987: result: yes
+configure:4995: checking if socklen_t defined
+configure:5080: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+configure:5080: $? = 0
+configure:5089: result: yes
+configure:5097: checking if sa_family_t defined
+configure:5182: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+conftest.c: In function 'main':
+conftest.c:96:17: error: unknown type name 'sa_family_t'
+   96 |                 sa_family_t foo;
+      |                 ^~~~~~~~~~~
+configure:5182: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| /* end confdefs.h.  */
+| 
+| #include	"confdefs.h"	/* the header built by configure so far */
+| #ifdef	HAVE_SYS_TYPES_H
+| #  include	<sys/types.h>
+| #endif
+| #ifdef	HAVE_SYS_SOCKET_H
+| #  include	<sys/socket.h>
+| #endif
+| #ifdef	HAVE_SYS_TIME_H
+| #  include    <sys/time.h>
+| #endif
+| #ifdef	HAVE_NETINET_IN_H
+| #  include    <netinet/in.h>
+| #endif
+| #ifdef	HAVE_ARPA_INET_H
+| #  include    <arpa/inet.h>
+| #endif
+| #ifdef	HAVE_ERRNO_H
+| #  include    <errno.h>
+| #endif
+| #ifdef	HAVE_FCNTL_H
+| #  include    <fcntl.h>
+| #endif
+| #ifdef	HAVE_NETDB_H
+| #  include	<netdb.h>
+| #endif
+| #ifdef	HAVE_SIGNAL_H
+| #  include	<signal.h>
+| #endif
+| #ifdef	HAVE_STDIO_H
+| #  include	<stdio.h>
+| #endif
+| #ifdef	HAVE_STDLIB_H
+| #  include	<stdlib.h>
+| #endif
+| #ifdef	HAVE_STRING_H
+| #  include	<string.h>
+| #endif
+| #ifdef	HAVE_SYS_STAT_H
+| #  include	<sys/stat.h>
+| #endif
+| #ifdef	HAVE_SYS_UIO_H
+| #  include	<sys/uio.h>
+| #endif
+| #ifdef	HAVE_UNISTD_H
+| #  include	<unistd.h>
+| #endif
+| #ifdef	HAVE_SYS_WAIT_H
+| #  include	<sys/wait.h>
+| #endif
+| #ifdef	HAVE_SYS_UN_H
+| #  include	<sys/un.h>
+| #endif
+| #ifdef	HAVE_SYS_SELECT_H
+| # include   <sys/select.h>
+| #endif
+| #ifdef	HAVE_STRINGS_H
+| # include   <strings.h>
+| #endif
+| #ifdef	HAVE_SYS_IOCTL_H
+| # include   <sys/ioctl.h>
+| #endif
+| #ifdef	HAVE_SYS_FILIO_H
+| # include   <sys/filio.h>
+| #endif
+| #ifdef	HAVE_SYS_SOCKIO_H
+| # include   <sys/sockio.h>
+| #endif
+| #ifdef	HAVE_PTHREAD_H
+| #  include	<pthread.h>
+| #endif
+|             int main(void) {
+|                 sa_family_t foo;
+|                 return 0;
+|             }
+| 
+configure:5191: result: no
+configure:5200: checking if t_scalar_t defined
+configure:5300: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+conftest.c: In function 'main':
+conftest.c:112:17: error: unknown type name 't_scalar_t'
+  112 |                 t_scalar_t foo;
+      |                 ^~~~~~~~~~
+configure:5300: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| /* end confdefs.h.  */
+| 
+| #include	"confdefs.h"	/* the header built by configure so far */
+| #ifdef	HAVE_SYS_TYPES_H
+| #  include	<sys/types.h>
+| #endif
+| #ifdef	HAVE_SYS_SOCKET_H
+| #  include	<sys/socket.h>
+| #endif
+| #ifdef	HAVE_SYS_TIME_H
+| #  include    <sys/time.h>
+| #endif
+| #ifdef	HAVE_NETINET_IN_H
+| #  include    <netinet/in.h>
+| #endif
+| #ifdef	HAVE_ARPA_INET_H
+| #  include    <arpa/inet.h>
+| #endif
+| #ifdef	HAVE_ERRNO_H
+| #  include    <errno.h>
+| #endif
+| #ifdef	HAVE_FCNTL_H
+| #  include    <fcntl.h>
+| #endif
+| #ifdef	HAVE_NETDB_H
+| #  include	<netdb.h>
+| #endif
+| #ifdef	HAVE_SIGNAL_H
+| #  include	<signal.h>
+| #endif
+| #ifdef	HAVE_STDIO_H
+| #  include	<stdio.h>
+| #endif
+| #ifdef	HAVE_STDLIB_H
+| #  include	<stdlib.h>
+| #endif
+| #ifdef	HAVE_STRING_H
+| #  include	<string.h>
+| #endif
+| #ifdef	HAVE_SYS_STAT_H
+| #  include	<sys/stat.h>
+| #endif
+| #ifdef	HAVE_SYS_UIO_H
+| #  include	<sys/uio.h>
+| #endif
+| #ifdef	HAVE_UNISTD_H
+| #  include	<unistd.h>
+| #endif
+| #ifdef	HAVE_SYS_WAIT_H
+| #  include	<sys/wait.h>
+| #endif
+| #ifdef	HAVE_SYS_UN_H
+| #  include	<sys/un.h>
+| #endif
+| #ifdef	HAVE_SYS_SELECT_H
+| # include   <sys/select.h>
+| #endif
+| #ifdef	HAVE_STRINGS_H
+| # include   <strings.h>
+| #endif
+| #ifdef	HAVE_SYS_IOCTL_H
+| # include   <sys/ioctl.h>
+| #endif
+| #ifdef	HAVE_SYS_FILIO_H
+| # include   <sys/filio.h>
+| #endif
+| #ifdef	HAVE_SYS_SOCKIO_H
+| # include   <sys/sockio.h>
+| #endif
+| #ifdef	HAVE_PTHREAD_H
+| #  include	<pthread.h>
+| #endif
+| #ifdef	HAVE_POLL_H
+| #  include	<poll.h>
+| #endif
+| #ifdef	HAVE_XTI_H
+| #  include	<xti.h>
+| #endif
+| #ifdef	HAVE_NETCONFIG_H
+| #  include	<netconfig.h>
+| #endif
+| #ifdef	HAVE_NETDIR_H
+| #  include	<netdir.h>
+| #endif
+| #ifdef	HAVE_STROPTS_H
+| #  include	<stropts.h>
+| #endif
+|             int main(void) {
+|                 t_scalar_t foo;
+|                 return 0;
+|             }
+| 
+configure:5309: result: no
+configure:5317: checking if t_uscalar_t defined
+configure:5417: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+conftest.c: In function 'main':
+conftest.c:113:17: error: unknown type name 't_uscalar_t'; did you mean 't_scalar_t'?
+  113 |                 t_uscalar_t foo;
+      |                 ^~~~~~~~~~~
+      |                 t_scalar_t
+configure:5417: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| /* end confdefs.h.  */
+| 
+| #include	"confdefs.h"	/* the header built by configure so far */
+| #ifdef	HAVE_SYS_TYPES_H
+| #  include	<sys/types.h>
+| #endif
+| #ifdef	HAVE_SYS_SOCKET_H
+| #  include	<sys/socket.h>
+| #endif
+| #ifdef	HAVE_SYS_TIME_H
+| #  include    <sys/time.h>
+| #endif
+| #ifdef	HAVE_NETINET_IN_H
+| #  include    <netinet/in.h>
+| #endif
+| #ifdef	HAVE_ARPA_INET_H
+| #  include    <arpa/inet.h>
+| #endif
+| #ifdef	HAVE_ERRNO_H
+| #  include    <errno.h>
+| #endif
+| #ifdef	HAVE_FCNTL_H
+| #  include    <fcntl.h>
+| #endif
+| #ifdef	HAVE_NETDB_H
+| #  include	<netdb.h>
+| #endif
+| #ifdef	HAVE_SIGNAL_H
+| #  include	<signal.h>
+| #endif
+| #ifdef	HAVE_STDIO_H
+| #  include	<stdio.h>
+| #endif
+| #ifdef	HAVE_STDLIB_H
+| #  include	<stdlib.h>
+| #endif
+| #ifdef	HAVE_STRING_H
+| #  include	<string.h>
+| #endif
+| #ifdef	HAVE_SYS_STAT_H
+| #  include	<sys/stat.h>
+| #endif
+| #ifdef	HAVE_SYS_UIO_H
+| #  include	<sys/uio.h>
+| #endif
+| #ifdef	HAVE_UNISTD_H
+| #  include	<unistd.h>
+| #endif
+| #ifdef	HAVE_SYS_WAIT_H
+| #  include	<sys/wait.h>
+| #endif
+| #ifdef	HAVE_SYS_UN_H
+| #  include	<sys/un.h>
+| #endif
+| #ifdef	HAVE_SYS_SELECT_H
+| # include   <sys/select.h>
+| #endif
+| #ifdef	HAVE_STRINGS_H
+| # include   <strings.h>
+| #endif
+| #ifdef	HAVE_SYS_IOCTL_H
+| # include   <sys/ioctl.h>
+| #endif
+| #ifdef	HAVE_SYS_FILIO_H
+| # include   <sys/filio.h>
+| #endif
+| #ifdef	HAVE_SYS_SOCKIO_H
+| # include   <sys/sockio.h>
+| #endif
+| #ifdef	HAVE_PTHREAD_H
+| #  include	<pthread.h>
+| #endif
+| #ifdef	HAVE_POLL_H
+| #  include	<poll.h>
+| #endif
+| #ifdef	HAVE_XTI_H
+| #  include	<xti.h>
+| #endif
+| #ifdef	HAVE_NETCONFIG_H
+| #  include	<netconfig.h>
+| #endif
+| #ifdef	HAVE_NETDIR_H
+| #  include	<netdir.h>
+| #endif
+| #ifdef	HAVE_STROPTS_H
+| #  include	<stropts.h>
+| #endif
+|             int main(void) {
+|                 t_uscalar_t foo;
+|                 return 0;
+|             }
+| 
+configure:5426: result: no
+configure:5435: checking for struct sockaddr.sa_len
+configure:5435: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+conftest.c: In function 'main':
+conftest.c:35:12: error: 'struct sockaddr' has no member named 'sa_len'
+   35 | if (ac_aggr.sa_len)
+      |            ^
+configure:5435: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| /* end confdefs.h.  */
+| 
+| #include <sys/types.h>
+| #include <sys/socket.h>
+| 
+| int
+| main (void)
+| {
+| static struct sockaddr ac_aggr;
+| if (ac_aggr.sa_len)
+| return 0;
+|   ;
+|   return 0;
+| }
+configure:5435: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+conftest.c: In function 'main':
+conftest.c:35:19: error: 'struct sockaddr' has no member named 'sa_len'
+   35 | if (sizeof ac_aggr.sa_len)
+      |                   ^
+configure:5435: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| /* end confdefs.h.  */
+| 
+| #include <sys/types.h>
+| #include <sys/socket.h>
+| 
+| int
+| main (void)
+| {
+| static struct sockaddr ac_aggr;
+| if (sizeof ac_aggr.sa_len)
+| return 0;
+|   ;
+|   return 0;
+| }
+configure:5435: result: no
+configure:5458: checking for struct sockaddr_storage
+configure:5458: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+conftest.c:21:18: error: duplicate 'unsigned'
+   21 | #define uint16_t unsigned short
+      |                  ^~~~~~~~
+conftest.c:21:27: error: duplicate 'short'
+   21 | #define uint16_t unsigned short
+      |                           ^~~~~
+configure:5458: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| #define SA_FAMILY_T uint16_t
+| /* end confdefs.h.  */
+| 
+| #include <sys/types.h>
+| #include <sys/socket.h>
+| 
+| int
+| main (void)
+| {
+| if (sizeof (struct sockaddr_storage))
+| 	 return 0;
+|   ;
+|   return 0;
+| }
+configure:5458: result: no
+configure:5493: checking for struct msghdr.msg_control
+configure:5493: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+conftest.c:21:18: error: duplicate 'unsigned'
+   21 | #define uint16_t unsigned short
+      |                  ^~~~~~~~
+conftest.c:21:27: error: duplicate 'short'
+   21 | #define uint16_t unsigned short
+      |                           ^~~~~
+configure:5493: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| #define SA_FAMILY_T uint16_t
+| /* end confdefs.h.  */
+| 
+| #include <sys/types.h>
+| #include <sys/socket.h>
+| 
+| int
+| main (void)
+| {
+| static struct msghdr ac_aggr;
+| if (ac_aggr.msg_control)
+| return 0;
+|   ;
+|   return 0;
+| }
+configure:5493: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+conftest.c:21:18: error: duplicate 'unsigned'
+   21 | #define uint16_t unsigned short
+      |                  ^~~~~~~~
+conftest.c:21:27: error: duplicate 'short'
+   21 | #define uint16_t unsigned short
+      |                           ^~~~~
+configure:5493: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| #define SA_FAMILY_T uint16_t
+| /* end confdefs.h.  */
+| 
+| #include <sys/types.h>
+| #include <sys/socket.h>
+| 
+| int
+| main (void)
+| {
+| static struct msghdr ac_aggr;
+| if (sizeof ac_aggr.msg_control)
+| return 0;
+|   ;
+|   return 0;
+| }
+configure:5493: result: no
+configure:5505: checking for struct ifreq.ifr_mtu
+configure:5505: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+conftest.c:21:18: error: duplicate 'unsigned'
+   21 | #define uint16_t unsigned short
+      |                  ^~~~~~~~
+conftest.c:21:27: error: duplicate 'short'
+   21 | #define uint16_t unsigned short
+      |                           ^~~~~
+configure:5505: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| #define SA_FAMILY_T uint16_t
+| /* end confdefs.h.  */
+| #include <sys/types.h>
+| #include <sys/socket.h>
+| #include <net/if.h>
+| 
+| int
+| main (void)
+| {
+| static struct ifreq ac_aggr;
+| if (ac_aggr.ifr_mtu)
+| return 0;
+|   ;
+|   return 0;
+| }
+configure:5505: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+conftest.c:21:18: error: duplicate 'unsigned'
+   21 | #define uint16_t unsigned short
+      |                  ^~~~~~~~
+conftest.c:21:27: error: duplicate 'short'
+   21 | #define uint16_t unsigned short
+      |                           ^~~~~
+configure:5505: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| #define SA_FAMILY_T uint16_t
+| /* end confdefs.h.  */
+| #include <sys/types.h>
+| #include <sys/socket.h>
+| #include <net/if.h>
+| 
+| int
+| main (void)
+| {
+| static struct ifreq ac_aggr;
+| if (sizeof ac_aggr.ifr_mtu)
+| return 0;
+|   ;
+|   return 0;
+| }
+configure:5505: result: no
+configure:5518: checking for getaddrinfo function prototype in netdb.h
+configure:5530: checking how to run the C preprocessor
+configure:5594: gcc -E  conftest.c
+configure:5594: $? = 0
+configure:5609: gcc -E  conftest.c
+conftest.c:28:10: fatal error: ac_nonexistent.h: No such file or directory
+   28 | #include <ac_nonexistent.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+configure:5609: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| #define SA_FAMILY_T uint16_t
+| /* end confdefs.h.  */
+| #include <ac_nonexistent.h>
+configure:5636: result: gcc -E
+configure:5650: gcc -E  conftest.c
+configure:5650: $? = 0
+configure:5665: gcc -E  conftest.c
+conftest.c:28:10: fatal error: ac_nonexistent.h: No such file or directory
+   28 | #include <ac_nonexistent.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+configure:5665: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| #define SA_FAMILY_T uint16_t
+| /* end confdefs.h.  */
+| #include <ac_nonexistent.h>
+configure:5711: result: yes
+configure:5719: checking for getnameinfo function prototype in netdb.h
+configure:5740: result: yes
+configure:5748: checking for gethostname function prototype in unistd.h
+configure:5769: result: yes
+configure:5777: checking for getrusage function prototype in sys/resource.h
+configure:5798: result: yes
+configure:5806: checking for hstrerror function prototype in netdb.h
+configure:5827: result: yes
+configure:5835: checking for if_nametoindex function prototype in net/if.h
+configure:5856: result: yes
+configure:5864: checking for inet_aton function prototype in arpa/inet.h
+configure:5885: result: yes
+configure:5893: checking for inet_pton function prototype in arpa/inet.h
+configure:5914: result: yes
+configure:5922: checking for pselect function prototype in sys/select.h
+configure:5943: result: yes
+configure:5951: checking for snprintf function prototype in stdio.h
+configure:5972: result: yes
+configure:5980: checking for sockatmark function prototype in sys/socket.h
+configure:6001: result: yes
+configure:6021: checking for struct addrinfo
+configure:6021: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+conftest.c:20:17: error: two or more data types in declaration specifiers
+   20 | #define uint8_t unsigned char
+      |                 ^~~~~~~~
+conftest.c:20:26: error: two or more data types in declaration specifiers
+   20 | #define uint8_t unsigned char
+      |                          ^~~~
+conftest.c:21:18: error: two or more data types in declaration specifiers
+   21 | #define uint16_t unsigned short
+      |                  ^~~~~~~~
+conftest.c:21:27: error: two or more data types in declaration specifiers
+   21 | #define uint16_t unsigned short
+      |                           ^~~~~
+conftest.c:22:18: error: two or more data types in declaration specifiers
+   22 | #define uint32_t unsigned int
+      |                  ^~~~~~~~
+conftest.c:22:27: error: two or more data types in declaration specifiers
+   22 | #define uint32_t unsigned int
+      |                           ^~~
+conftest.c:21:18: error: duplicate 'unsigned'
+   21 | #define uint16_t unsigned short
+      |                  ^~~~~~~~
+conftest.c:21:27: error: duplicate 'short'
+   21 | #define uint16_t unsigned short
+      |                           ^~~~~
+configure:6021: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| #define SA_FAMILY_T uint16_t
+| #define HAVE_GETADDRINFO_PROTO 1
+| #define HAVE_GETNAMEINFO_PROTO 1
+| #define HAVE_GETHOSTNAME_PROTO 1
+| #define HAVE_GETRUSAGE_PROTO 1
+| #define HAVE_HSTRERROR_PROTO 1
+| #define HAVE_IF_NAMETOINDEX_PROTO 1
+| #define HAVE_INET_ATON_PROTO 1
+| #define HAVE_INET_PTON_PROTO 1
+| #define HAVE_PSELECT_PROTO 1
+| #define HAVE_SNPRINTF_PROTO 1
+| #define HAVE_SOCKATMARK_PROTO 1
+| /* end confdefs.h.  */
+| 
+| #include <netdb.h>
+| 
+| int
+| main (void)
+| {
+| if (sizeof (struct addrinfo))
+| 	 return 0;
+|   ;
+|   return 0;
+| }
+configure:6021: result: no
+configure:6032: checking for struct if_nameindex
+configure:6032: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+conftest.c:21:18: error: duplicate 'unsigned'
+   21 | #define uint16_t unsigned short
+      |                  ^~~~~~~~
+conftest.c:21:27: error: duplicate 'short'
+   21 | #define uint16_t unsigned short
+      |                           ^~~~~
+configure:6032: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| #define SA_FAMILY_T uint16_t
+| #define HAVE_GETADDRINFO_PROTO 1
+| #define HAVE_GETNAMEINFO_PROTO 1
+| #define HAVE_GETHOSTNAME_PROTO 1
+| #define HAVE_GETRUSAGE_PROTO 1
+| #define HAVE_HSTRERROR_PROTO 1
+| #define HAVE_IF_NAMETOINDEX_PROTO 1
+| #define HAVE_INET_ATON_PROTO 1
+| #define HAVE_INET_PTON_PROTO 1
+| #define HAVE_PSELECT_PROTO 1
+| #define HAVE_SNPRINTF_PROTO 1
+| #define HAVE_SOCKATMARK_PROTO 1
+| /* end confdefs.h.  */
+| 
+| #include <sys/types.h>
+| #include <sys/socket.h>
+| #include <net/if.h>
+| 
+| int
+| main (void)
+| {
+| if (sizeof (struct if_nameindex))
+| 	 return 0;
+|   ;
+|   return 0;
+| }
+configure:6032: result: no
+configure:6045: checking for struct sockaddr_dl
+configure:6045: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+conftest.c:21:18: error: duplicate 'unsigned'
+   21 | #define uint16_t unsigned short
+      |                  ^~~~~~~~
+conftest.c:21:27: error: duplicate 'short'
+   21 | #define uint16_t unsigned short
+      |                           ^~~~~
+conftest.c:42:10: fatal error: net/if_dl.h: No such file or directory
+   42 | #include <net/if_dl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+configure:6045: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| #define SA_FAMILY_T uint16_t
+| #define HAVE_GETADDRINFO_PROTO 1
+| #define HAVE_GETNAMEINFO_PROTO 1
+| #define HAVE_GETHOSTNAME_PROTO 1
+| #define HAVE_GETRUSAGE_PROTO 1
+| #define HAVE_HSTRERROR_PROTO 1
+| #define HAVE_IF_NAMETOINDEX_PROTO 1
+| #define HAVE_INET_ATON_PROTO 1
+| #define HAVE_INET_PTON_PROTO 1
+| #define HAVE_PSELECT_PROTO 1
+| #define HAVE_SNPRINTF_PROTO 1
+| #define HAVE_SOCKATMARK_PROTO 1
+| /* end confdefs.h.  */
+| 
+| #include <sys/types.h>
+| #include <sys/socket.h>
+| #include <net/if_dl.h>
+| 
+| int
+| main (void)
+| {
+| if (sizeof (struct sockaddr_dl))
+| 	 return 0;
+|   ;
+|   return 0;
+| }
+configure:6045: result: no
+configure:6058: checking for struct timespec
+configure:6058: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+configure:6058: $? = 0
+configure:6058: gcc -c -g -O2 -D_REENTRANT  conftest.c >&5
+conftest.c: In function 'main':
+conftest.c:55:30: error: expected expression before ')' token
+   55 | if (sizeof ((struct timespec)))
+      |                              ^
+configure:6058: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| #define SA_FAMILY_T uint16_t
+| #define HAVE_GETADDRINFO_PROTO 1
+| #define HAVE_GETNAMEINFO_PROTO 1
+| #define HAVE_GETHOSTNAME_PROTO 1
+| #define HAVE_GETRUSAGE_PROTO 1
+| #define HAVE_HSTRERROR_PROTO 1
+| #define HAVE_IF_NAMETOINDEX_PROTO 1
+| #define HAVE_INET_ATON_PROTO 1
+| #define HAVE_INET_PTON_PROTO 1
+| #define HAVE_PSELECT_PROTO 1
+| #define HAVE_SNPRINTF_PROTO 1
+| #define HAVE_SOCKATMARK_PROTO 1
+| /* end confdefs.h.  */
+| 
+| #if TIME_WITH_SYS_TIME
+| #include <sys/time.h>
+| #include <time.h>
+| #else
+| #if HAVE_SYS_TIME_H
+| #include <sys/time.h>
+| #else
+| #include <time.h>
+| #endif
+| #endif
+| 
+| 
+| int
+| main (void)
+| {
+| if (sizeof ((struct timespec)))
+| 	    return 0;
+|   ;
+|   return 0;
+| }
+configure:6058: result: yes
+configure:6079: checking for /dev/tcp
+configure:6088: result: no
+configure:6091: checking for /dev/xti/tcp
+configure:6100: result: no
+configure:6103: checking for /dev/streams/xtiso/tcp
+configure:6112: result: no
+configure:6118: checking for bzero
+configure:6118: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+conftest.c:56:6: warning: conflicting types for built-in function 'bzero'; expected 'void(void *, long unsigned int)' [-Wbuiltin-declaration-mismatch]
+   56 | char bzero ();
+      |      ^~~~~
+configure:6118: $? = 0
+configure:6118: result: yes
+configure:6125: checking for getaddrinfo
+configure:6125: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+configure:6125: $? = 0
+configure:6125: result: yes
+configure:6132: checking for gethostname
+configure:6132: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+configure:6132: $? = 0
+configure:6132: result: yes
+configure:6139: checking for gethostbyname2
+configure:6139: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+configure:6139: $? = 0
+configure:6139: result: yes
+configure:6146: checking for gethostbyname_r
+configure:6146: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+configure:6146: $? = 0
+configure:6146: result: yes
+configure:6153: checking for getnameinfo
+configure:6153: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+configure:6153: $? = 0
+configure:6153: result: yes
+configure:6160: checking for hstrerror
+configure:6160: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+configure:6160: $? = 0
+configure:6160: result: yes
+configure:6167: checking for if_nametoindex
+configure:6167: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+configure:6167: $? = 0
+configure:6167: result: yes
+configure:6174: checking for inet_aton
+configure:6174: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+configure:6174: $? = 0
+configure:6174: result: yes
+configure:6181: checking for inet_pton
+configure:6181: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+configure:6181: $? = 0
+configure:6181: result: yes
+configure:6188: checking for inet6_rth_init
+configure:6188: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+configure:6188: $? = 0
+configure:6188: result: yes
+configure:6195: checking for kqueue
+configure:6195: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+/usr/bin/ld: /tmp/ccp0tObL.o: in function `main':
+/home/fei/practice/conftest.c:78:(.text.startup+0xb): undefined reference to `kqueue'
+collect2: error: ld returned 1 exit status
+configure:6195: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| #define SA_FAMILY_T uint16_t
+| #define HAVE_GETADDRINFO_PROTO 1
+| #define HAVE_GETNAMEINFO_PROTO 1
+| #define HAVE_GETHOSTNAME_PROTO 1
+| #define HAVE_GETRUSAGE_PROTO 1
+| #define HAVE_HSTRERROR_PROTO 1
+| #define HAVE_IF_NAMETOINDEX_PROTO 1
+| #define HAVE_INET_ATON_PROTO 1
+| #define HAVE_INET_PTON_PROTO 1
+| #define HAVE_PSELECT_PROTO 1
+| #define HAVE_SNPRINTF_PROTO 1
+| #define HAVE_SOCKATMARK_PROTO 1
+| #define HAVE_TIMESPEC_STRUCT 1
+| #define HAVE_BZERO 1
+| #define HAVE_GETADDRINFO 1
+| #define HAVE_GETHOSTNAME 1
+| #define HAVE_GETHOSTBYNAME2 1
+| #define HAVE_GETHOSTBYNAME_R 1
+| #define HAVE_GETNAMEINFO 1
+| #define HAVE_HSTRERROR 1
+| #define HAVE_IF_NAMETOINDEX 1
+| #define HAVE_INET_ATON 1
+| #define HAVE_INET_PTON 1
+| #define HAVE_INET6_RTH_INIT 1
+| /* end confdefs.h.  */
+| /* Define kqueue to an innocuous variant, in case <limits.h> declares kqueue.
+|    For example, HP-UX 11i <limits.h> declares gettimeofday.  */
+| #define kqueue innocuous_kqueue
+| 
+| /* System header to define __stub macros and hopefully few prototypes,
+|    which can conflict with char kqueue (); below.  */
+| 
+| #include <limits.h>
+| #undef kqueue
+| 
+| /* Override any GCC internal prototype to avoid an error.
+|    Use char because int might match the return type of a GCC
+|    builtin and then its argument prototype would still apply.  */
+| #ifdef __cplusplus
+| extern "C"
+| #endif
+| char kqueue ();
+| /* The GNU C library defines this for functions which it implements
+|     to always fail with ENOSYS.  Some functions are actually named
+|     something starting with __ and the normal name is an alias.  */
+| #if defined __stub_kqueue || defined __stub___kqueue
+| choke me
+| #endif
+| 
+| int
+| main (void)
+| {
+| return kqueue ();
+|   ;
+|   return 0;
+| }
+configure:6195: result: no
+configure:6201: checking for kevent
+configure:6201: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+/usr/bin/ld: /tmp/ccYtcwW3.o: in function `main':
+/home/fei/practice/conftest.c:78:(.text.startup+0xb): undefined reference to `kevent'
+collect2: error: ld returned 1 exit status
+configure:6201: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| #define SA_FAMILY_T uint16_t
+| #define HAVE_GETADDRINFO_PROTO 1
+| #define HAVE_GETNAMEINFO_PROTO 1
+| #define HAVE_GETHOSTNAME_PROTO 1
+| #define HAVE_GETRUSAGE_PROTO 1
+| #define HAVE_HSTRERROR_PROTO 1
+| #define HAVE_IF_NAMETOINDEX_PROTO 1
+| #define HAVE_INET_ATON_PROTO 1
+| #define HAVE_INET_PTON_PROTO 1
+| #define HAVE_PSELECT_PROTO 1
+| #define HAVE_SNPRINTF_PROTO 1
+| #define HAVE_SOCKATMARK_PROTO 1
+| #define HAVE_TIMESPEC_STRUCT 1
+| #define HAVE_BZERO 1
+| #define HAVE_GETADDRINFO 1
+| #define HAVE_GETHOSTNAME 1
+| #define HAVE_GETHOSTBYNAME2 1
+| #define HAVE_GETHOSTBYNAME_R 1
+| #define HAVE_GETNAMEINFO 1
+| #define HAVE_HSTRERROR 1
+| #define HAVE_IF_NAMETOINDEX 1
+| #define HAVE_INET_ATON 1
+| #define HAVE_INET_PTON 1
+| #define HAVE_INET6_RTH_INIT 1
+| /* end confdefs.h.  */
+| /* Define kevent to an innocuous variant, in case <limits.h> declares kevent.
+|    For example, HP-UX 11i <limits.h> declares gettimeofday.  */
+| #define kevent innocuous_kevent
+| 
+| /* System header to define __stub macros and hopefully few prototypes,
+|    which can conflict with char kevent (); below.  */
+| 
+| #include <limits.h>
+| #undef kevent
+| 
+| /* Override any GCC internal prototype to avoid an error.
+|    Use char because int might match the return type of a GCC
+|    builtin and then its argument prototype would still apply.  */
+| #ifdef __cplusplus
+| extern "C"
+| #endif
+| char kevent ();
+| /* The GNU C library defines this for functions which it implements
+|     to always fail with ENOSYS.  Some functions are actually named
+|     something starting with __ and the normal name is an alias.  */
+| #if defined __stub_kevent || defined __stub___kevent
+| choke me
+| #endif
+| 
+| int
+| main (void)
+| {
+| return kevent ();
+|   ;
+|   return 0;
+| }
+configure:6201: result: no
+configure:6208: checking for mkstemp
+configure:6208: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+configure:6208: $? = 0
+configure:6208: result: yes
+configure:6215: checking for poll
+configure:6215: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+configure:6215: $? = 0
+configure:6215: result: yes
+configure:6222: checking for pselect
+configure:6222: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+configure:6222: $? = 0
+configure:6222: result: yes
+configure:6229: checking for snprintf
+configure:6229: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+conftest.c:70:6: warning: conflicting types for built-in function 'snprintf'; expected 'int(char *, long unsigned int,  const char *, ...)' [-Wbuiltin-declaration-mismatch]
+   70 | char snprintf ();
+      |      ^~~~~~~~
+conftest.c:62:1: note: 'snprintf' is declared in header '<stdio.h>'
+   61 | #include <limits.h>
+   62 | #undef snprintf
+configure:6229: $? = 0
+configure:6229: result: yes
+configure:6236: checking for sockatmark
+configure:6236: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+configure:6236: $? = 0
+configure:6236: result: yes
+configure:6243: checking for vsnprintf
+configure:6243: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+conftest.c:72:6: warning: conflicting types for built-in function 'vsnprintf'; expected 'int(char *, long unsigned int,  const char *, __va_list_tag *)' [-Wbuiltin-declaration-mismatch]
+   72 | char vsnprintf ();
+      |      ^~~~~~~~~
+conftest.c:64:1: note: 'vsnprintf' is declared in header '<stdio.h>'
+   63 | #include <limits.h>
+   64 | #undef vsnprintf
+configure:6243: $? = 0
+configure:6243: result: yes
+configure:6252: checking for IPv4 support
+configure:6322: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+conftest.c:21:18: error: duplicate 'unsigned'
+   21 | #define uint16_t unsigned short
+      |                  ^~~~~~~~
+conftest.c:21:27: error: duplicate 'short'
+   21 | #define uint16_t unsigned short
+      |                           ^~~~~
+conftest.c:20:17: error: two or more data types in declaration specifiers
+   20 | #define uint8_t unsigned char
+      |                 ^~~~~~~~
+conftest.c:20:26: error: two or more data types in declaration specifiers
+   20 | #define uint8_t unsigned char
+      |                          ^~~~
+conftest.c:21:18: error: two or more data types in declaration specifiers
+   21 | #define uint16_t unsigned short
+      |                  ^~~~~~~~
+conftest.c:21:27: error: two or more data types in declaration specifiers
+   21 | #define uint16_t unsigned short
+      |                           ^~~~~
+conftest.c:22:18: error: two or more data types in declaration specifiers
+   22 | #define uint32_t unsigned int
+      |                  ^~~~~~~~
+conftest.c:22:27: error: two or more data types in declaration specifiers
+   22 | #define uint32_t unsigned int
+      |                           ^~~
+conftest.c:64:9: warning: return type defaults to 'int' [-Wimplicit-int]
+   64 |         main()
+      |         ^~~~
+conftest.c: In function 'main':
+conftest.c:69:17: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+   69 |                 exit(fd >= 0 ? 0 : 1);
+      |                 ^~~~
+conftest.c:61:8: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   60 | #       include <netinet/in.h>
+  +++ |+#include <stdlib.h>
+   61 |         /* Make sure the definitions for AF_INET and struct sockaddr_in
+conftest.c:69:17: warning: incompatible implicit declaration of built-in function 'exit' [-Wbuiltin-declaration-mismatch]
+   69 |                 exit(fd >= 0 ? 0 : 1);
+      |                 ^~~~
+conftest.c:69:17: note: include '<stdlib.h>' or provide a declaration of 'exit'
+configure:6322: $? = 1
+configure: program exited with status 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| #define SA_FAMILY_T uint16_t
+| #define HAVE_GETADDRINFO_PROTO 1
+| #define HAVE_GETNAMEINFO_PROTO 1
+| #define HAVE_GETHOSTNAME_PROTO 1
+| #define HAVE_GETRUSAGE_PROTO 1
+| #define HAVE_HSTRERROR_PROTO 1
+| #define HAVE_IF_NAMETOINDEX_PROTO 1
+| #define HAVE_INET_ATON_PROTO 1
+| #define HAVE_INET_PTON_PROTO 1
+| #define HAVE_PSELECT_PROTO 1
+| #define HAVE_SNPRINTF_PROTO 1
+| #define HAVE_SOCKATMARK_PROTO 1
+| #define HAVE_TIMESPEC_STRUCT 1
+| #define HAVE_BZERO 1
+| #define HAVE_GETADDRINFO 1
+| #define HAVE_GETHOSTNAME 1
+| #define HAVE_GETHOSTBYNAME2 1
+| #define HAVE_GETHOSTBYNAME_R 1
+| #define HAVE_GETNAMEINFO 1
+| #define HAVE_HSTRERROR 1
+| #define HAVE_IF_NAMETOINDEX 1
+| #define HAVE_INET_ATON 1
+| #define HAVE_INET_PTON 1
+| #define HAVE_INET6_RTH_INIT 1
+| #define HAVE_MKSTEMP 1
+| #define HAVE_POLL 1
+| #define HAVE_PSELECT 1
+| #define HAVE_SNPRINTF 1
+| #define HAVE_SOCKATMARK 1
+| #define HAVE_VSNPRINTF 1
+| /* end confdefs.h.  */
+| 
+| #	include <sys/types.h>
+| #	include <sys/socket.h>
+| #	include <netinet/in.h>
+| 	/* Make sure the definitions for AF_INET and struct sockaddr_in
+| 	 * are defined, and that we can actually create an IPv4 TCP socket.
+| 	 */
+| 	main()
+| 	{
+| 		int fd;
+| 		struct sockaddr_in foo;
+| 		fd = socket(AF_INET, SOCK_STREAM, 0);
+| 		exit(fd >= 0 ? 0 : 1);
+| 	}
+configure:6334: result: no
+configure:6345: checking for IPv6 support
+configure:6372: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+conftest.c:21:18: error: duplicate 'unsigned'
+   21 | #define uint16_t unsigned short
+      |                  ^~~~~~~~
+conftest.c:21:27: error: duplicate 'short'
+   21 | #define uint16_t unsigned short
+      |                           ^~~~~
+conftest.c:20:17: error: two or more data types in declaration specifiers
+   20 | #define uint8_t unsigned char
+      |                 ^~~~~~~~
+conftest.c:20:26: error: two or more data types in declaration specifiers
+   20 | #define uint8_t unsigned char
+      |                          ^~~~
+conftest.c:21:18: error: two or more data types in declaration specifiers
+   21 | #define uint16_t unsigned short
+      |                  ^~~~~~~~
+conftest.c:21:27: error: two or more data types in declaration specifiers
+   21 | #define uint16_t unsigned short
+      |                           ^~~~~
+conftest.c:22:18: error: two or more data types in declaration specifiers
+   22 | #define uint32_t unsigned int
+      |                  ^~~~~~~~
+conftest.c:22:27: error: two or more data types in declaration specifiers
+   22 | #define uint32_t unsigned int
+      |                           ^~~
+conftest.c:64:9: warning: return type defaults to 'int' [-Wimplicit-int]
+   64 |         main()
+      |         ^~~~
+conftest.c: In function 'main':
+conftest.c:69:17: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+   69 |                 exit(fd >= 0 ? 0 : 1);
+      |                 ^~~~
+conftest.c:61:8: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   60 | #       include <netinet/in.h>
+  +++ |+#include <stdlib.h>
+   61 |         /* Make sure the definitions for AF_INET6 and struct sockaddr_in6
+conftest.c:69:17: warning: incompatible implicit declaration of built-in function 'exit' [-Wbuiltin-declaration-mismatch]
+   69 |                 exit(fd >= 0 ? 0 : 1);
+      |                 ^~~~
+conftest.c:69:17: note: include '<stdlib.h>' or provide a declaration of 'exit'
+configure:6372: $? = 1
+configure: program exited with status 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| #define SA_FAMILY_T uint16_t
+| #define HAVE_GETADDRINFO_PROTO 1
+| #define HAVE_GETNAMEINFO_PROTO 1
+| #define HAVE_GETHOSTNAME_PROTO 1
+| #define HAVE_GETRUSAGE_PROTO 1
+| #define HAVE_HSTRERROR_PROTO 1
+| #define HAVE_IF_NAMETOINDEX_PROTO 1
+| #define HAVE_INET_ATON_PROTO 1
+| #define HAVE_INET_PTON_PROTO 1
+| #define HAVE_PSELECT_PROTO 1
+| #define HAVE_SNPRINTF_PROTO 1
+| #define HAVE_SOCKATMARK_PROTO 1
+| #define HAVE_TIMESPEC_STRUCT 1
+| #define HAVE_BZERO 1
+| #define HAVE_GETADDRINFO 1
+| #define HAVE_GETHOSTNAME 1
+| #define HAVE_GETHOSTBYNAME2 1
+| #define HAVE_GETHOSTBYNAME_R 1
+| #define HAVE_GETNAMEINFO 1
+| #define HAVE_HSTRERROR 1
+| #define HAVE_IF_NAMETOINDEX 1
+| #define HAVE_INET_ATON 1
+| #define HAVE_INET_PTON 1
+| #define HAVE_INET6_RTH_INIT 1
+| #define HAVE_MKSTEMP 1
+| #define HAVE_POLL 1
+| #define HAVE_PSELECT 1
+| #define HAVE_SNPRINTF 1
+| #define HAVE_SOCKATMARK 1
+| #define HAVE_VSNPRINTF 1
+| /* end confdefs.h.  */
+| 
+| #	include <sys/types.h>
+| #	include <sys/socket.h>
+| #	include <netinet/in.h>
+| 	/* Make sure the definitions for AF_INET6 and struct sockaddr_in6
+| 	 * are defined, and that we can actually create an IPv6 TCP socket.
+| 	 */
+| 	main()
+| 	{
+| 		int fd;
+| 		struct sockaddr_in6 foo;
+| 		fd = socket(AF_INET6, SOCK_STREAM, 0);
+| 		exit(fd >= 0 ? 0 : 1);
+| 	}
+configure:6384: result: no
+configure:6395: checking for Unix domain sockets
+configure:6422: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+conftest.c:21:18: error: duplicate 'unsigned'
+   21 | #define uint16_t unsigned short
+      |                  ^~~~~~~~
+conftest.c:21:27: error: duplicate 'short'
+   21 | #define uint16_t unsigned short
+      |                           ^~~~~
+conftest.c:64:9: warning: return type defaults to 'int' [-Wimplicit-int]
+   64 |         main()
+      |         ^~~~
+conftest.c: In function 'main':
+conftest.c:69:17: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+   69 |                 exit(fd >= 0 ? 0 : 1);
+      |                 ^~~~
+conftest.c:61:8: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   60 | #       include <sys/un.h>
+  +++ |+#include <stdlib.h>
+   61 |         /* Make sure the definitions for AF_UNIX and struct sockaddr_un
+conftest.c:69:17: warning: incompatible implicit declaration of built-in function 'exit' [-Wbuiltin-declaration-mismatch]
+   69 |                 exit(fd >= 0 ? 0 : 1);
+      |                 ^~~~
+conftest.c:69:17: note: include '<stdlib.h>' or provide a declaration of 'exit'
+configure:6422: $? = 1
+configure: program exited with status 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| #define SA_FAMILY_T uint16_t
+| #define HAVE_GETADDRINFO_PROTO 1
+| #define HAVE_GETNAMEINFO_PROTO 1
+| #define HAVE_GETHOSTNAME_PROTO 1
+| #define HAVE_GETRUSAGE_PROTO 1
+| #define HAVE_HSTRERROR_PROTO 1
+| #define HAVE_IF_NAMETOINDEX_PROTO 1
+| #define HAVE_INET_ATON_PROTO 1
+| #define HAVE_INET_PTON_PROTO 1
+| #define HAVE_PSELECT_PROTO 1
+| #define HAVE_SNPRINTF_PROTO 1
+| #define HAVE_SOCKATMARK_PROTO 1
+| #define HAVE_TIMESPEC_STRUCT 1
+| #define HAVE_BZERO 1
+| #define HAVE_GETADDRINFO 1
+| #define HAVE_GETHOSTNAME 1
+| #define HAVE_GETHOSTBYNAME2 1
+| #define HAVE_GETHOSTBYNAME_R 1
+| #define HAVE_GETNAMEINFO 1
+| #define HAVE_HSTRERROR 1
+| #define HAVE_IF_NAMETOINDEX 1
+| #define HAVE_INET_ATON 1
+| #define HAVE_INET_PTON 1
+| #define HAVE_INET6_RTH_INIT 1
+| #define HAVE_MKSTEMP 1
+| #define HAVE_POLL 1
+| #define HAVE_PSELECT 1
+| #define HAVE_SNPRINTF 1
+| #define HAVE_SOCKATMARK 1
+| #define HAVE_VSNPRINTF 1
+| /* end confdefs.h.  */
+| 
+| #	include <sys/types.h>
+| #	include <sys/socket.h>
+| #	include <sys/un.h>
+| 	/* Make sure the definitions for AF_UNIX and struct sockaddr_un
+| 	 * are defined, and that we can actually create an IPv4 TCP socket.
+| 	 */
+| 	main()
+| 	{
+| 		int fd;
+| 		struct sockaddr_un foo;
+| 		fd = socket(AF_UNIX, SOCK_STREAM, 0);
+| 		exit(fd >= 0 ? 0 : 1);
+| 	}
+configure:6434: result: no
+configure:6445: checking for multicast support
+configure:6475: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
+conftest.c:21:18: error: duplicate 'unsigned'
+   21 | #define uint16_t unsigned short
+      |                  ^~~~~~~~
+conftest.c:21:27: error: duplicate 'short'
+   21 | #define uint16_t unsigned short
+      |                           ^~~~~
+conftest.c:20:17: error: two or more data types in declaration specifiers
+   20 | #define uint8_t unsigned char
+      |                 ^~~~~~~~
+conftest.c:20:26: error: two or more data types in declaration specifiers
+   20 | #define uint8_t unsigned char
+      |                          ^~~~
+conftest.c:21:18: error: two or more data types in declaration specifiers
+   21 | #define uint16_t unsigned short
+      |                  ^~~~~~~~
+conftest.c:21:27: error: two or more data types in declaration specifiers
+   21 | #define uint16_t unsigned short
+      |                           ^~~~~
+conftest.c:22:18: error: two or more data types in declaration specifiers
+   22 | #define uint32_t unsigned int
+      |                  ^~~~~~~~
+conftest.c:22:27: error: two or more data types in declaration specifiers
+   22 | #define uint32_t unsigned int
+      |                           ^~~
+conftest.c:61:9: warning: return type defaults to 'int' [-Wimplicit-int]
+   61 |         main()
+      |         ^~~~
+conftest.c: In function 'main':
+conftest.c:68:29: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+   68 |                 if (fd < 0) exit(1);
+      |                             ^~~~
+conftest.c:61:8: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   60 | #       include <netinet/in.h>
+  +++ |+#include <stdlib.h>
+   61 |         main()
+conftest.c:68:29: warning: incompatible implicit declaration of built-in function 'exit' [-Wbuiltin-declaration-mismatch]
+   68 |                 if (fd < 0) exit(1);
+      |                             ^~~~
+conftest.c:68:29: note: include '<stdlib.h>' or provide a declaration of 'exit'
+conftest.c:71:25: warning: incompatible implicit declaration of built-in function 'exit' [-Wbuiltin-declaration-mismatch]
+   71 |                         exit(1);
+      |                         ^~~~
+conftest.c:71:25: note: include '<stdlib.h>' or provide a declaration of 'exit'
+conftest.c:72:17: warning: incompatible implicit declaration of built-in function 'exit' [-Wbuiltin-declaration-mismatch]
+   72 |                 exit(0);
+      |                 ^~~~
+conftest.c:72:17: note: include '<stdlib.h>' or provide a declaration of 'exit'
+configure:6475: $? = 1
+configure: program exited with status 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "practice"
+| #define PACKAGE_TARNAME "practice"
+| #define PACKAGE_VERSION "1.0"
+| #define PACKAGE_STRING "practice 1.0"
+| #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
+| #define PACKAGE_URL ""
+| #define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+| #define HAVE_LIBPTHREAD 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define uint8_t unsigned char
+| #define uint16_t unsigned short
+| #define uint32_t unsigned int
+| #define sa_family_t SA_FAMILY_T
+| #define t_scalar_t int32_t
+| #define t_uscalar_t uint32_t
+| #define SA_FAMILY_T uint16_t
+| #define HAVE_GETADDRINFO_PROTO 1
+| #define HAVE_GETNAMEINFO_PROTO 1
+| #define HAVE_GETHOSTNAME_PROTO 1
+| #define HAVE_GETRUSAGE_PROTO 1
+| #define HAVE_HSTRERROR_PROTO 1
+| #define HAVE_IF_NAMETOINDEX_PROTO 1
+| #define HAVE_INET_ATON_PROTO 1
+| #define HAVE_INET_PTON_PROTO 1
+| #define HAVE_PSELECT_PROTO 1
+| #define HAVE_SNPRINTF_PROTO 1
+| #define HAVE_SOCKATMARK_PROTO 1
+| #define HAVE_TIMESPEC_STRUCT 1
+| #define HAVE_BZERO 1
+| #define HAVE_GETADDRINFO 1
+| #define HAVE_GETHOSTNAME 1
+| #define HAVE_GETHOSTBYNAME2 1
+| #define HAVE_GETHOSTBYNAME_R 1
+| #define HAVE_GETNAMEINFO 1
+| #define HAVE_HSTRERROR 1
+| #define HAVE_IF_NAMETOINDEX 1
+| #define HAVE_INET_ATON 1
+| #define HAVE_INET_PTON 1
+| #define HAVE_INET6_RTH_INIT 1
+| #define HAVE_MKSTEMP 1
+| #define HAVE_POLL 1
+| #define HAVE_PSELECT 1
+| #define HAVE_SNPRINTF 1
+| #define HAVE_SOCKATMARK 1
+| #define HAVE_VSNPRINTF 1
+| /* end confdefs.h.  */
+| 
+| #	include <sys/types.h>
+| #	include <sys/socket.h>
+| #	include <netinet/in.h>
+| 	main()
+| 	{
+| 		int fd;
+| 		unsigned char flag = 1;
+| 		struct sockaddr_in foo;
+| 		struct ip_mreq mreq;
+| 		fd = socket(AF_INET, SOCK_DGRAM, 0);
+| 		if (fd < 0) exit(1);
+| 		if (setsockopt(fd, IPPROTO_IP, IP_MULTICAST_LOOP,
+| 			       (void*)&flag, sizeof(flag)) < 0)
+| 			exit(1);
+| 		exit(0);
+| 	}
+configure:6487: result: no
+configure:6621: checking for -I/home/fei/doc/unp2ev1/src/include
+configure:6628: result: no
+configure:6754: creating ./config.status
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by practice config.status 1.0, which was
+generated by GNU Autoconf 2.71.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status 
+
+on ASUS
+
+config.status:852: creating Makefile
+config.status:852: creating Make.defines
+config.status:852: creating config.h
 
 ## ---------------- ##
 ## Cache variables. ##
 ## ---------------- ##
 
+ac_cv_build=x86_64-pc-linux-gnu
+ac_cv_c_compiler_gnu=yes
 ac_cv_env_CC_set=
 ac_cv_env_CC_value=
 ac_cv_env_CFLAGS_set=
@@ -72,37 +2462,114 @@ ac_cv_env_host_alias_set=
 ac_cv_env_host_alias_value=
 ac_cv_env_target_alias_set=
 ac_cv_env_target_alias_value=
+ac_cv_func_bzero=yes
+ac_cv_func_getaddrinfo=yes
+ac_cv_func_gethostbyname2=yes
+ac_cv_func_gethostbyname_r=yes
+ac_cv_func_gethostname=yes
+ac_cv_func_getnameinfo=yes
+ac_cv_func_hstrerror=yes
+ac_cv_func_if_nametoindex=yes
+ac_cv_func_inet6_rth_init=yes
+ac_cv_func_inet_aton=yes
+ac_cv_func_inet_pton=yes
+ac_cv_func_kevent=no
+ac_cv_func_kqueue=no
+ac_cv_func_mkstemp=yes
+ac_cv_func_poll=yes
+ac_cv_func_pselect=yes
+ac_cv_func_snprintf=yes
+ac_cv_func_sockatmark=yes
+ac_cv_func_vsnprintf=yes
+ac_cv_have_getaddrinfo_proto=yes
+ac_cv_have_gethostname_proto=yes
+ac_cv_have_getnameinfo_proto=yes
+ac_cv_have_getrusage_proto=yes
+ac_cv_have_hstrerror_proto=yes
+ac_cv_have_if_nametoindex_proto=yes
+ac_cv_have_inet_aton_proto=yes
+ac_cv_have_inet_pton_proto=yes
+ac_cv_have_pselect_proto=yes
+ac_cv_have_snprintf_proto=yes
+ac_cv_have_sockatmark_proto=yes
+ac_cv_header_inttypes_h=yes
+ac_cv_header_stdint_h=yes
+ac_cv_header_stdio_h=yes
+ac_cv_header_stdlib_h=yes
+ac_cv_header_string_h=yes
+ac_cv_header_strings_h=yes
+ac_cv_header_sys_stat_h=yes
+ac_cv_header_sys_types_h=yes
+ac_cv_header_unistd_h=yes
+ac_cv_host=x86_64-pc-linux-gnu
+ac_cv_ipv4=no
+ac_cv_ipv6=no
+ac_cv_lib_nsl_t_open=no
+ac_cv_lib_pthread_pthread_create=yes
+ac_cv_lib_resolv_res_init=no
+ac_cv_lib_xti_t_open=no
+ac_cv_member_struct_ifreq_ifr_mtu=no
+ac_cv_member_struct_msghdr_msg_control=no
+ac_cv_member_struct_sockaddr_sa_len=no
+ac_cv_multicast=no
+ac_cv_objext=o
+ac_cv_path_EGREP='/usr/bin/grep -E'
+ac_cv_path_GREP=/usr/bin/grep
+ac_cv_prog_CPP='gcc -E'
+ac_cv_prog_ac_ct_CC=gcc
+ac_cv_prog_ac_ct_RANLIB=ranlib
+ac_cv_prog_cc_c11=
+ac_cv_prog_cc_g=yes
+ac_cv_prog_cc_stdc=
+ac_cv_search_socket='none required'
+ac_cv_type_int16_t=yes
+ac_cv_type_int32_t=yes
+ac_cv_type_sa_family_t=no
+ac_cv_type_size_t=yes
+ac_cv_type_socklen_t=yes
+ac_cv_type_ssize_t=yes
+ac_cv_type_struct_addrinfo=no
+ac_cv_type_struct_if_nameindex=no
+ac_cv_type_struct_sockaddr_dl=no
+ac_cv_type_struct_sockaddr_storage=no
+ac_cv_type_struct_timespec=yes
+ac_cv_type_t_scalar_t=no
+ac_cv_type_t_uscalar_t=no
+ac_cv_type_uint16_t=no
+ac_cv_type_uint32_t=no
+ac_cv_type_uint8_t=no
+ac_cv_unixdomain=no
 
 ## ----------------- ##
 ## Output variables. ##
 ## ----------------- ##
 
-CC=''
-CFLAGS=''
-CPP=''
+CC='gcc'
+CFLAGS='-g -O2 -D_REENTRANT -Wall'
+CPP='gcc -E'
 CPPFLAGS=''
-DEFS=''
+DEFS='-DHAVE_CONFIG_H'
 ECHO_C=''
 ECHO_N='-n'
 ECHO_T=''
-EGREP=''
+EGREP='/usr/bin/grep -E'
 EXEEXT=''
-GREP=''
+GREP='/usr/bin/grep'
 LDFLAGS=''
-LIBFREE_OBJS=''
+LIBFREE_OBJS=' in_cksum.o inet_ntop.o inet_pton.o'
 LIBGAI_OBJS=''
 LIBOBJS=''
-LIBROUTE_OBJS=''
-LIBS=''
-LIBS_XTI=''
-LIBUNP=''
-LIBUNPXTI=''
-LIBUNPXTI_NAME=''
-LIBUNP_NAME=''
-LIBXTI_OBJS=''
-LIB_OBJS=''
+LIBROUTE_OBJS='get_rtaddrs.o if_indextoname.o if_nameindex.o if_nametoindex.o net_rt_iflist.o net_rt_dump.o sock_masktop.o'
+LIBS='-lpthread'
+LIBS_XTI='-lpthread'
+LIBUNP='../libunp.a'
+LIBUNPXTI='../libunpxti.a'
+LIBUNPXTI_NAME='../libunpxti.a'
+LIBUNP_NAME='../libunp.a'
+LIBXTI_OBJS=' wrapxti.o xti_accept.o xti_flags_str.o xti_getopt.o xti_ntop.o xti_ntop_host.o xti_rdwr.o xti_setopt.o xti_str_opts.o xti_tlook_str.o'
+LIB_OBJS=' connect_nonb.o connect_timeo.o daemon_inetd.o daemon_init.o dg_cli.o dg_echo.o error.o get_ifi_info.o gf_time.o host_serv.o my_addrs.o read_fd.o readline.o readn.o readable_timeo.o rtt.o signal.o signal_intr.o sock_bind_wild.o sock_cmp_addr.o sock_cmp_port.o sock_ntop.o sock_ntop_host.o sock_get_port.o sock_set_addr.o sock_set_port.o sock_set_wild.o sockfd_to_family.o str_cli.o str_echo.o tcp_connect.o tcp_listen.o tv_sub.o udp_client.o udp_connect.o udp_server.o wraplib.o wrapsock.o wrapstdio.o wrapunix.o write_fd.o writen.o writable_timeo.o'
 LTLIBOBJS=''
-OBJEXT=''
+OBJEXT='o'
 PACKAGE_BUGREPORT='feiguiyang637@gmail.com'
 PACKAGE_NAME='practice'
 PACKAGE_STRING='practice 1.0'
@@ -110,25 +2577,25 @@ PACKAGE_TARNAME='practice'
 PACKAGE_URL=''
 PACKAGE_VERSION='1.0'
 PATH_SEPARATOR=':'
-RANLIB=''
+RANLIB='ranlib'
 SHELL='/bin/bash'
-ac_ct_CC=''
+ac_ct_CC='gcc'
 bindir='${exec_prefix}/bin'
-build=''
+build='x86_64-pc-linux-gnu'
 build_alias=''
-build_cpu=''
-build_os=''
-build_vendor=''
+build_cpu='x86_64'
+build_os='linux-gnu'
+build_vendor='pc'
 datadir='${datarootdir}'
 datarootdir='${prefix}/share'
 docdir='${datarootdir}/doc/${PACKAGE_TARNAME}'
 dvidir='${docdir}'
-exec_prefix='NONE'
-host=''
+exec_prefix='${prefix}'
+host='x86_64-pc-linux-gnu'
 host_alias=''
-host_cpu=''
-host_os=''
-host_vendor=''
+host_cpu='x86_64'
+host_os='linux-gnu'
+host_vendor='pc'
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
@@ -139,7 +2606,7 @@ localstatedir='${prefix}/var'
 mandir='${datarootdir}/man'
 oldincludedir='/usr/include'
 pdfdir='${docdir}'
-prefix='NONE'
+prefix='/usr/local'
 program_transform_name='s,x,x,'
 psdir='${docdir}'
 runstatedir='${localstatedir}/run'
@@ -159,5 +2626,53 @@ target_alias=''
 #define PACKAGE_STRING "practice 1.0"
 #define PACKAGE_BUGREPORT "feiguiyang637@gmail.com"
 #define PACKAGE_URL ""
+#define CPU_VENDOR_OS "x86_64-pc-linux-gnu"
+#define HAVE_LIBPTHREAD 1
+#define HAVE_STDIO_H 1
+#define HAVE_STDLIB_H 1
+#define HAVE_STRING_H 1
+#define HAVE_INTTYPES_H 1
+#define HAVE_STDINT_H 1
+#define HAVE_STRINGS_H 1
+#define HAVE_SYS_STAT_H 1
+#define HAVE_SYS_TYPES_H 1
+#define HAVE_UNISTD_H 1
+#define STDC_HEADERS 1
+#define uint8_t unsigned char
+#define uint16_t unsigned short
+#define uint32_t unsigned int
+#define sa_family_t SA_FAMILY_T
+#define t_scalar_t int32_t
+#define t_uscalar_t uint32_t
+#define SA_FAMILY_T uint16_t
+#define HAVE_GETADDRINFO_PROTO 1
+#define HAVE_GETNAMEINFO_PROTO 1
+#define HAVE_GETHOSTNAME_PROTO 1
+#define HAVE_GETRUSAGE_PROTO 1
+#define HAVE_HSTRERROR_PROTO 1
+#define HAVE_IF_NAMETOINDEX_PROTO 1
+#define HAVE_INET_ATON_PROTO 1
+#define HAVE_INET_PTON_PROTO 1
+#define HAVE_PSELECT_PROTO 1
+#define HAVE_SNPRINTF_PROTO 1
+#define HAVE_SOCKATMARK_PROTO 1
+#define HAVE_TIMESPEC_STRUCT 1
+#define HAVE_BZERO 1
+#define HAVE_GETADDRINFO 1
+#define HAVE_GETHOSTNAME 1
+#define HAVE_GETHOSTBYNAME2 1
+#define HAVE_GETHOSTBYNAME_R 1
+#define HAVE_GETNAMEINFO 1
+#define HAVE_HSTRERROR 1
+#define HAVE_IF_NAMETOINDEX 1
+#define HAVE_INET_ATON 1
+#define HAVE_INET_PTON 1
+#define HAVE_INET6_RTH_INIT 1
+#define HAVE_MKSTEMP 1
+#define HAVE_POLL 1
+#define HAVE_PSELECT 1
+#define HAVE_SNPRINTF 1
+#define HAVE_SOCKATMARK 1
+#define HAVE_VSNPRINTF 1
 
-configure: exit 1
+configure: exit 0
