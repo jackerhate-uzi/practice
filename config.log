@@ -171,7 +171,7 @@ configure:3922: checking for /home/fei/libresolv.a
 configure:3929: result: no
 configure:3931: checking for res_init in -lresolv
 configure:3954: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lresolv  -lpthread  >&5
-/usr/bin/ld: /tmp/ccReOtrJ.o: in function `main':
+/usr/bin/ld: /tmp/ccQ8ZTJL.o: in function `main':
 /home/fei/practice/conftest.c:19:(.text.startup+0xb): undefined reference to `res_init'
 collect2: error: ld returned 1 exit status
 configure:3954: $? = 1
@@ -1750,7 +1750,7 @@ configure:6188: $? = 0
 configure:6188: result: yes
 configure:6195: checking for kqueue
 configure:6195: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
-/usr/bin/ld: /tmp/ccp0tObL.o: in function `main':
+/usr/bin/ld: /tmp/cc8Ih5C0.o: in function `main':
 /home/fei/practice/conftest.c:78:(.text.startup+0xb): undefined reference to `kqueue'
 collect2: error: ld returned 1 exit status
 configure:6195: $? = 1
@@ -1839,7 +1839,7 @@ configure: failed program was:
 configure:6195: result: no
 configure:6201: checking for kevent
 configure:6201: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
-/usr/bin/ld: /tmp/ccYtcwW3.o: in function `main':
+/usr/bin/ld: /tmp/ccqxCwZb.o: in function `main':
 /home/fei/practice/conftest.c:78:(.text.startup+0xb): undefined reference to `kevent'
 collect2: error: ld returned 1 exit status
 configure:6201: $? = 1
