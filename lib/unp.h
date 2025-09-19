@@ -1,6 +1,8 @@
 #ifndef __unp_h
 #define __unp_h
 
+#include "../config.h"
+
 #define MAXLINE 4096
 #define LISTENQ 1024
 
